@@ -16,3 +16,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Anymous function
+Route::get('/', function($id) {
+    echo "Selamat Datang";
+ });
+
+ Route::get('/', function($id) {
+    echo "NIM : 2241727006 <br> Nama : Corneza Nabetha Nuril Izza Hadne <br> Kelas : TSA Web B";
+ });
+
+ Route::get('/', function($id) {
+    echo "Halaman Artikel dengan ID 100";
+ });
+
+
+Route::get('/articles/{id}', function($id) {
+   echo "Ini merupakan halaman artikel dengan id ".$id;
+});
+
